@@ -1,0 +1,7 @@
+#!/bin/bash
+export ZENHOME="/opt/zenoss"
+export PATH="${ZENHOME}/bin:${PATH}"
+export PYTHONPATH="/opt/zenoss/lib/python"
+export LD_LIBRARY_PATH="/opt/zenoss/lib"
+/opt/zenoss/bin/zendmd < /home/zenoss/scripts/rackxls/rackxls.py > /dev/null 2>&1
+/home/zenoss/scripts/emailreport.sh

@@ -1,0 +1,1 @@
+0 1 * * * /home/zenoss/scripts/create_reports
